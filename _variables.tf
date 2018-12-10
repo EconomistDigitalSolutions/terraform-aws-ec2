@@ -23,13 +23,13 @@ variable "instance-type" {
 variable "instance-key-name" {
   description = "The name of the SSH key to associate to the instance. Note that the key must exist already."
   type        = "string"
-  default     = "engagement-key"
+  default     = ""
 }
 
 variable "iam-role-name" {
   description = "The IAM role to assign to the instance"
   type        = "string"
-  default     = "role-name"
+  default     = ""
 }
 
 variable "instance-associate-public-ip" {
