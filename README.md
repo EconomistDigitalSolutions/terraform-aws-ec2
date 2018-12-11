@@ -1,6 +1,6 @@
 # Terraform for EC2 instances
 
-Automatic deployment and management of EC2 instances using Terraform
+Automatic deployment and management of EC2 instances using Terraform.
 
 <hr/>
 
@@ -62,6 +62,7 @@ The stack created by this terraform module is composed of:
 
 ## ToDo's
 
+* Improve documentation 
 
 <hr/>
 
