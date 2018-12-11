@@ -11,7 +11,7 @@ resource "aws_instance" "instance" {
   key_name                    = "${var.instance-key-name != "" ? var.instance-key-name : ""}"
   associate_public_ip_address = "${var.instance-associate-public-ip}"
   # user_data                   = "${file("${var.user-data-script}")}"
-  user_data                   = "${var.user-data-script != "" ? ("${var.user-data-script}") : ""}"
+  user_data                   = "${var.user-data-script != "" ? file("${var.user-data-script}") : ""}"
   vpc_security_group_ids      = ["${aws_security_group.sg.id}"]
   subnet_id                   = "${aws_subnet.subnet.id}"
 
